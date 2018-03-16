@@ -44,7 +44,7 @@ shinyServer(function(input, output) {
   })
   
   output$bodyFat <- renderText({
-    calcBodyFat() 
+    round(calcBodyFat(),2) 
   })
   
   output$rating <- renderText({
